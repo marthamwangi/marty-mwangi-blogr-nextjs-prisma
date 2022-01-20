@@ -30,7 +30,7 @@ async function publishPost(id: number): Promise<void> {
   await Router.push("/");
 }
 async function deletePost(id: number): Promise<void> {
-  await fetch(`https://marty-mwangi-blogr-nextjs-prisma.vercel.app//api/post/${id}`, {
+  await fetch(`https://marty-mwangi-blogr-nextjs-prisma.vercel.app/api/post/${id}`, {
     method: "DELETE",
   });
   Router.push("/");
